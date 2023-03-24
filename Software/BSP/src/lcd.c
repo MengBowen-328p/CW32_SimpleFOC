@@ -17,8 +17,6 @@ void LCD_Init(void)
     SPI1_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_8; //预分频48/2/8 = 3MHz
     SPI1_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB; 
     SPI1_InitStructure.SPI_Speed = SPI_Speed_High;  //高速SPI模式
-
-
 }
 
 void LCD_RCC_Init(void) //初始化时钟
