@@ -65,7 +65,7 @@ int32_t main(void)
 {
     // GPIO_InitTypeDef GPIO_InitStruct;
 
-    RCC_Init_External(8000000);
+    RCC_Init_Internal();
     LED_Init();
 	Key_Init();
 	
