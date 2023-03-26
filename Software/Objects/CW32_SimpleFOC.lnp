@@ -31,6 +31,8 @@
 ".\objects\key.o"
 ".\objects\delay.o"
 ".\objects\lcd.o"
+".\objects\lcd_gui.o"
+".\objects\font.o"
 ".\objects\croutine.o"
 ".\objects\event_groups.o"
 ".\objects\list.o"

@@ -558,6 +558,16 @@
               <FileType>1</FileType>
               <FilePath>.\BSP\src\lcd.c</FilePath>
             </File>
+            <File>
+              <FileName>lcd_gui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\BSP\src\lcd_gui.c</FilePath>
+            </File>
+            <File>
+              <FileName>font.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\font.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

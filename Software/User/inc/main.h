@@ -33,6 +33,14 @@ extern "C"
 #include "system_cw32f030.h"
 #include "cw32f030_flash.h"	
 
+#include "../../BSP/inc/rcc.h"
+// #include "../../FreeRTOS/include/FreeRTOS.h"
+#include "../../BSP/inc/led.h"
+#include "../../BSP/inc/delay.h"
+#include "../../BSP/inc/key.h"
+#include "../../BSP/inc/lcd.h"
+#include "../../BSP/inc/lcd_gui.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 /* USER CODE END Includes */

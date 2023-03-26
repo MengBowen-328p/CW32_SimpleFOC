@@ -15,12 +15,7 @@ Powered by WHCHY Libaries
  * Include files
  ******************************************************************************/
 #include "../inc/main.h"
-#include "../../BSP/inc/rcc.h"
-#include "../../FreeRTOS/include/FreeRTOS.h"
-#include "../../BSP/inc/led.h"
-#include "../../BSP/inc/delay.h"
-#include "../../BSP/inc/key.h"
-#include "../../BSP/inc/lcd.h"
+
 
 /******************************************************************************
  * Local pre-processor symbols/macros ('#define')
@@ -66,10 +61,11 @@ void GPIO_Configuration(void);
  ******************************************************************************/
 int32_t main(void)
 {
-	RCC_Configuration();  //ÏµÍ³Ê±ÖÓ64M
-	GPIO_Configuration(); //LED³õÊ¼»¯
+	RCC_Configuration();  //ÏµÍ³Ê±ï¿½ï¿½64M
+	GPIO_Configuration(); //LEDï¿½ï¿½Ê¼ï¿½ï¿½
 	Lcd_Init();
-	Lcd_Clear(RED);               //ÇåÆÁ
+	Lcd_Clear(BLACK);               //ï¿½ï¿½ï¿½ï¿½
+	Gui_DrawFont_GBK16(0,0,WHITE,BLACK,"HELLO WORLD");
 	
     // GPIO_InitTypeDef GPIO_InitStruct;
 
@@ -87,14 +83,6 @@ int32_t main(void)
 
     while (1)
     {
-        if(Read_Key1() == 1)
-        {
-            LED2_ON();
-        }
-        else
-        {
-            LED2_OFF();
-        }
     }
 }
 
@@ -114,23 +102,23 @@ int32_t main(void)
 
 void RCC_Configuration(void)
 {
-  /* 0. HSIÊ¹ÄÜ²¢Ð£×¼ */
+  /* 0. HSIÊ¹ï¿½Ü²ï¿½Ð£×¼ */
   RCC_HSI_Enable(RCC_HSIOSC_DIV6);
 
-  /* 1. ÉèÖÃHCLKºÍPCLKµÄ·ÖÆµÏµÊý¡¡*/
+  /* 1. ï¿½ï¿½ï¿½ï¿½HCLKï¿½ï¿½PCLKï¿½Ä·ï¿½ÆµÏµï¿½ï¿½ï¿½ï¿½*/
   RCC_HCLKPRS_Config(RCC_HCLK_DIV1);
   RCC_PCLKPRS_Config(RCC_PCLK_DIV1);
   
-  /* 2. Ê¹ÄÜPLL£¬Í¨¹ýPLL±¶Æµµ½64MHz */
-  RCC_PLL_Enable(RCC_PLLSOURCE_HSI, 8000000, 8);     // HSI Ä¬ÈÏÊä³öÆµÂÊ8MHz
- // RCC_PLL_OUT();  //PC13½ÅÊä³öPLLÊ±ÖÓ
+  /* 2. Ê¹ï¿½ï¿½PLLï¿½ï¿½Í¨ï¿½ï¿½PLLï¿½ï¿½Æµï¿½ï¿½64MHz */
+  RCC_PLL_Enable(RCC_PLLSOURCE_HSI, 8000000, 8);     // HSI Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½8MHz
+ // RCC_PLL_OUT();  //PC13ï¿½ï¿½ï¿½ï¿½ï¿½PLLÊ±ï¿½ï¿½
   
-  ///< µ±Ê¹ÓÃµÄÊ±ÖÓÔ´HCLK´óÓÚ24M,Ð¡ÓÚµÈÓÚ48MHz£ºÉèÖÃFLASH ¶ÁµÈ´ýÖÜÆÚÎª2 cycle
-  ///< µ±Ê¹ÓÃµÄÊ±ÖÓÔ´HCLK´óÓÚ48MHz£ºÉèÖÃFLASH ¶ÁµÈ´ýÖÜÆÚÎª3 cycle
+  ///< ï¿½ï¿½Ê¹ï¿½Ãµï¿½Ê±ï¿½ï¿½Ô´HCLKï¿½ï¿½ï¿½ï¿½24M,Ð¡ï¿½Úµï¿½ï¿½ï¿½48MHzï¿½ï¿½ï¿½ï¿½ï¿½ï¿½FLASH ï¿½ï¿½ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½Îª2 cycle
+  ///< ï¿½ï¿½Ê¹ï¿½Ãµï¿½Ê±ï¿½ï¿½Ô´HCLKï¿½ï¿½ï¿½ï¿½48MHzï¿½ï¿½ï¿½ï¿½ï¿½ï¿½FLASH ï¿½ï¿½ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½Îª3 cycle
   __RCC_FLASH_CLK_ENABLE();
   FLASH_SetLatency(FLASH_Latency_3);   
     
-  /* 3. Ê±ÖÓÇÐ»»µ½PLL */
+  /* 3. Ê±ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½PLL */
   RCC_SysClk_Switch(RCC_SYSCLKSRC_PLL);
   RCC_SystemCoreClockUpdate(64000000);	
 }

@@ -1,4 +1,4 @@
-#include "./rcc.h"
+#include "../inc/rcc.h"
 
 /**
 * @brief  Enable external oscillator

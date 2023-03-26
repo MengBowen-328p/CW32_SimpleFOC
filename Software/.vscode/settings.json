@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "rcc.h": "c",
-        "cw32f030_rcc.h": "c"
+        "cw32f030_rcc.h": "c",
+        "main.h": "c",
+        "lcd_gui.h": "c"
     }
 }

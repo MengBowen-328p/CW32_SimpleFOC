@@ -94,6 +94,5 @@ void Font_Test(void);
 void showimage(const unsigned char *p); 
 void QDTFT_Test_Demo(void);
 void Lcd_Clear_1(unsigned int Color);  
-
 #endif
 

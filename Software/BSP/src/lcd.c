@@ -1,10 +1,5 @@
 #include "lcd.h"
 
-//#include "delay.h"
- //函数调用头文件
-   //为了解除sprintf警告
-//#include "LCD_calculate.h"
-//#include "global.h"     
 
 //液晶IO初始化配置
 void LCD_GPIO_Init(void)
