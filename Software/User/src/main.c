@@ -65,7 +65,18 @@ int32_t main(void)
 	GPIO_Configuration(); //LED��ʼ��
 	Lcd_Init();
 	Lcd_Clear(BLACK);               //����
-	Gui_DrawFont_GBK16(0,0,WHITE,BLACK,"HELLO WORLD");
+	Gui_DrawFont_GBK16(0,0,WHITE,BLACK,"HALLO WORLD");
+	Gui_DrawFont_GBK16(0,16,WHITE,BLACK,"HALLO WORLD");
+	Gui_DrawFont_GBK16(0,32,WHITE,BLACK,"HALLO WORLD");
+	Gui_DrawFont_GBK16(0,48,WHITE,BLACK,"HELLO WORLD");
+	Gui_DrawFont_GBK16(0,64,WHITE,BLACK,"HELLO WORLD");
+	Gui_DrawFont_GBK16(0,80,WHITE,BLACK,"HELLO WORLD");
+	Gui_DrawFont_GBK16(0,96,WHITE,BLACK,"HELLO WORLD");
+	Gui_DrawFont_GBK16(0,112,WHITE,BLACK,"HELLO WORLD");
+	Gui_DrawFont_GBK16(0,128,WHITE,BLACK,"HELLO WORLD");
+	Gui_DrawFont_GBK16(0,144,WHITE,BLACK,"HELLO WORLD");
+	Gui_DrawFont_GBK16(0,160,WHITE,BLACK,"HELLO WORLD");
+	
 	
     // GPIO_InitTypeDef GPIO_InitStruct;
 

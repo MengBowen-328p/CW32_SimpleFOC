@@ -1795,8 +1795,8 @@ Image Symbol Table
     i.__scatterload_zeroinit                 0x00000ce8   Section       14  handlers.o(i.__scatterload_zeroinit)
     i.assert_failed                          0x00000cf6   Section        0  main.o(i.assert_failed)
     i.main                                   0x00000cf8   Section        0  main.o(i.main)
-    .constdata                               0x00000d30   Section      100  cw32f030_rcc.o(.constdata)
-    .constdata                               0x00000d94   Section     1521  font.o(.constdata)
+    .constdata                               0x00000ddc   Section      100  cw32f030_rcc.o(.constdata)
+    .constdata                               0x00000e40   Section     1521  font.o(.constdata)
     .data                                    0x20000000   Section        4  system_cw32f030.o(.data)
     .data                                    0x20000004   Section        9  cw32f030_systick.o(.data)
     STACK                                    0x20000010   Section      512  startup_cw32f030.o(STACK)
@@ -1900,11 +1900,11 @@ Image Symbol Table
     __scatterload_null                       0x00000ce7   Thumb Code     2  handlers.o(i.__scatterload_null)
     __scatterload_zeroinit                   0x00000ce9   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
     assert_failed                            0x00000cf7   Thumb Code     2  main.o(i.assert_failed)
-    main                                     0x00000cf9   Thumb Code    40  main.o(i.main)
-    hsiprs_tbl                               0x00000d30   Data          64  cw32f030_rcc.o(.constdata)
-    asc16                                    0x00000d94   Data        1521  font.o(.constdata)
-    Region$$Table$$Base                      0x00001388   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x000013a8   Number         0  anon$$obj.o(Region$$Table)
+    main                                     0x00000cf9   Thumb Code   200  main.o(i.main)
+    hsiprs_tbl                               0x00000ddc   Data          64  cw32f030_rcc.o(.constdata)
+    asc16                                    0x00000e40   Data        1521  font.o(.constdata)
+    Region$$Table$$Base                      0x00001434   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00001454   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_cw32f030.o(.data)
     uwTick                                   0x20000004   Data           4  cw32f030_systick.o(.data)
     uwTickPrio                               0x20000008   Data           4  cw32f030_systick.o(.data)
@@ -1919,9 +1919,9 @@ Memory Map of the image
 
   Image Entry point : 0x000000c1
 
-  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x000013b8, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00001464, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x000013a8, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00001454, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2011,20 +2011,20 @@ Memory Map of the image
     0x00000ce6   0x00000ce6   0x00000002   Code   RO         4970    i.__scatterload_null  mc_p.l(handlers.o)
     0x00000ce8   0x00000ce8   0x0000000e   Code   RO         4971    i.__scatterload_zeroinit  mc_p.l(handlers.o)
     0x00000cf6   0x00000cf6   0x00000002   Code   RO          232    i.assert_failed     main.o
-    0x00000cf8   0x00000cf8   0x00000038   Code   RO          233    i.main              main.o
-    0x00000d30   0x00000d30   0x00000064   Data   RO         2488    .constdata          cw32f030_rcc.o
-    0x00000d94   0x00000d94   0x000005f1   Data   RO         4024    .constdata          font.o
-    0x00001385   0x00001385   0x00000003   PAD
-    0x00001388   0x00001388   0x00000020   Data   RO         4967    Region$$Table       anon$$obj.o
+    0x00000cf8   0x00000cf8   0x000000e4   Code   RO          233    i.main              main.o
+    0x00000ddc   0x00000ddc   0x00000064   Data   RO         2488    .constdata          cw32f030_rcc.o
+    0x00000e40   0x00000e40   0x000005f1   Data   RO         4024    .constdata          font.o
+    0x00001431   0x00001431   0x00000003   PAD
+    0x00001434   0x00001434   0x00000020   Data   RO         4967    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x000013a8, Size: 0x00000210, Max: 0x00002000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00001454, Size: 0x00000210, Max: 0x00002000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x000013a8   0x00000004   Data   RW          368    .data               system_cw32f030.o
-    0x20000004   0x000013ac   0x00000009   Data   RW         3087    .data               cw32f030_systick.o
-    0x2000000d   0x000013b5   0x00000003   PAD
+    0x20000000   0x00001454   0x00000004   Data   RW          368    .data               system_cw32f030.o
+    0x20000004   0x00001458   0x00000009   Data   RW         3087    .data               cw32f030_systick.o
+    0x2000000d   0x00001461   0x00000003   PAD
     0x20000010        -       0x00000200   Zero   RW          352    STACK               startup_cw32f030.o
 
 
@@ -2042,14 +2042,14 @@ Image component sizes
         24          8          0          9          0       1649   cw32f030_systick.o
          0          0       1521          0          0        536   font.o
         74          0          0          0          0      15784   interrupts_cw32f030.o
-      1024         44          0          0          0      53570   lcd.o
+      1024         44          0          0          0      53562   lcd.o
        160          6          0          0          0        865   lcd_gui.o
-       194         42          0          0          0     180600   main.o
+       366         54          0          0          0     180640   main.o
         28          8        192          0        512        560   startup_cw32f030.o
         76         14          0          4          0       1055   system_cw32f030.o
 
     ----------------------------------------------------------------------
-      3014        434       1848         16        512     261017   Object Totals
+      3186        446       1848         16        512     261049   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         10          0          3          3          0          0   (incl. Padding)
 
@@ -2091,15 +2091,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      3184        450       1848         16        512     258685   Grand Totals
-      3184        450       1848         16        512     258685   ELF Image Totals
-      3184        450       1848         16          0          0   ROM Totals
+      3356        462       1848         16        512     258717   Grand Totals
+      3356        462       1848         16        512     258717   ELF Image Totals
+      3356        462       1848         16          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 5032 (   4.91kB)
+    Total RO  Size (Code + RO Data)                 5204 (   5.08kB)
     Total RW  Size (RW Data + ZI Data)               528 (   0.52kB)
-    Total ROM Size (Code + RO Data + RW Data)       5048 (   4.93kB)
+    Total ROM Size (Code + RO Data + RW Data)       5220 (   5.10kB)
 
 ==============================================================================
 

@@ -2,7 +2,7 @@ Dependencies for Project 'CW32_SimpleFOC', Target 'Project': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
 F (.\User\src\interrupts_cw32f030.c)(0x641C85A2)(--gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\inc -I .\BSP\inc -I .\User\inc -I .\FreeRTOS\include -I .\FreeRTOS\protable-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\interrupts_cw32f030.o --omf_browse .\objects\interrupts_cw32f030.crf --depend .\objects\interrupts_cw32f030.d)
 I (User\src\../inc/interrupts_cw32f030.h)(0x641C85A2)
-F (.\User\src\main.c)(0x641FEC9D)(--gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\inc -I .\BSP\inc -I .\User\inc -I .\FreeRTOS\include -I .\FreeRTOS\protable-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\User\src\main.c)(0x641FF523)(--gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\inc -I .\BSP\inc -I .\User\inc -I .\FreeRTOS\include -I .\FreeRTOS\protable-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (User\src\../inc/main.h)(0x641FE600)
 I (.\Libraries\inc\cw32f030.h)(0x641C85A2)
 I (C:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0plus.h)(0x60D3E8E2)
@@ -26,9 +26,9 @@ I (User\src\../inc/../../BSP/inc/led.h)(0x641C85A2)
 I (User\src\../inc/../../BSP/inc/delay.h)(0x641C85A2)
 I (User\src\../inc/../../BSP/inc/key.h)(0x641C85A2)
 I (User\src\../inc/../../BSP/inc/lcd.h)(0x641FE5BC)
-I (User\src\../inc/../../BSP/inc/./lcd_config.h)(0x641FDA3D)
+I (User\src\../inc/../../BSP/inc/./lcd_config.h)(0x641FF0F3)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
-I (User\src\../inc/../../BSP/inc/lcd_gui.h)(0x641FDE58)
+I (User\src\../inc/../../BSP/inc/lcd_gui.h)(0x641FED07)
 I (User\src\../inc/../../BSP/inc/./font.h)(0x641FE77E)
 F (.\startup_cw32f030.s)(0x641C85A2)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_cw32f030.lst --xref -o .\objects\startup_cw32f030.o --depend .\objects\startup_cw32f030.d)
 F (.\Libraries\src\system_cw32f030.c)(0x641C85A2)(--gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\inc -I .\BSP\inc -I .\User\inc -I .\FreeRTOS\include -I .\FreeRTOS\protable-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\system_cw32f030.o --omf_browse .\objects\system_cw32f030.crf --depend .\objects\system_cw32f030.d)
@@ -371,7 +371,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
-F (.\BSP\src\rcc.c)(0x641EE802)(--gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\inc -I .\BSP\inc -I .\User\inc -I .\FreeRTOS\include -I .\FreeRTOS\protable-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\rcc.o --omf_browse .\objects\rcc.crf --depend .\objects\rcc.d)
+F (.\BSP\src\rcc.c)(0x641FED2D)(--gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\inc -I .\BSP\inc -I .\User\inc -I .\FreeRTOS\include -I .\FreeRTOS\protable-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\rcc.o --omf_browse .\objects\rcc.crf --depend .\objects\rcc.d)
 I (.\BSP\inc\./rcc.h)(0x641C85A2)
 I (.\BSP\inc\./../../Libraries/inc/cw32f030_rcc.h)(0x641C85A2)
 I (.\BSP\inc\./../../Libraries/inc/cw32f030.h)(0x641C85A2)
@@ -422,7 +422,7 @@ I (.\BSP\inc\delay.h)(0x641C85A2)
 F (.\BSP\src\delay.c)(0x641C85A2)(--gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\inc -I .\BSP\inc -I .\User\inc -I .\FreeRTOS\include -I .\FreeRTOS\protable-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
 I (.\BSP\inc\delay.h)(0x641C85A2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-F (.\BSP\src\lcd.c)(0x641FDBE4)(--gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\inc -I .\BSP\inc -I .\User\inc -I .\FreeRTOS\include -I .\FreeRTOS\protable-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
+F (.\BSP\src\lcd.c)(0x641FED13)(--gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\inc -I .\BSP\inc -I .\User\inc -I .\FreeRTOS\include -I .\FreeRTOS\protable-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
 I (.\BSP\inc\lcd.h)(0x641FE5BC)
 I (.\BSP\inc\../../Libraries/inc/cw32f030_rcc.h)(0x641C85A2)
 I (.\BSP\inc\../../Libraries/inc/cw32f030.h)(0x641C85A2)
@@ -438,10 +438,10 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (.\BSP\inc\../../Libraries/inc/cw32f030_gpio.h)(0x641C85A2)
-I (.\BSP\inc\./lcd_config.h)(0x641FDA3D)
+I (.\BSP\inc\./lcd_config.h)(0x641FF0F3)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 F (.\BSP\src\lcd_gui.c)(0x641FDE53)(--gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\inc -I .\BSP\inc -I .\User\inc -I .\FreeRTOS\include -I .\FreeRTOS\protable-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\lcd_gui.o --omf_browse .\objects\lcd_gui.crf --depend .\objects\lcd_gui.d)
-I (.\BSP\inc\./lcd_gui.h)(0x641FDE58)
+I (.\BSP\inc\./lcd_gui.h)(0x641FED07)
 I (.\BSP\inc\././lcd.h)(0x641FE5BC)
 I (.\BSP\inc\././../../Libraries/inc/cw32f030_rcc.h)(0x641C85A2)
 I (.\BSP\inc\././../../Libraries/inc/cw32f030.h)(0x641C85A2)
@@ -457,10 +457,10 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (.\BSP\inc\././../../Libraries/inc/cw32f030_gpio.h)(0x641C85A2)
-I (.\BSP\inc\./././lcd_config.h)(0x641FDA3D)
+I (.\BSP\inc\./././lcd_config.h)(0x641FF0F3)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (.\BSP\inc\././font.h)(0x641FE77E)
-F (.\font.c)(0x641FE69B)(--gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\inc -I .\BSP\inc -I .\User\inc -I .\FreeRTOS\include -I .\FreeRTOS\protable-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\font.o --omf_browse .\objects\font.crf --depend .\objects\font.d)
+F (.\font.c)(0x641FF6AB)(--gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\inc -I .\BSP\inc -I .\User\inc -I .\FreeRTOS\include -I .\FreeRTOS\protable-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\font.o --omf_browse .\objects\font.crf --depend .\objects\font.d)
 I (.\BSP\inc\../inc/font.h)(0x641FE77E)
 F (.\FreeRTOS\source\croutine.c)(0x641C85A2)(--gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Libraries\inc -I .\BSP\inc -I .\User\inc -I .\FreeRTOS\include -I .\FreeRTOS\protable-I.\RTE\_Project-IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_-o .\objects\croutine.o --omf_browse .\objects\croutine.crf --depend .\objects\croutine.d)
 I (.\FreeRTOS\include\FreeRTOS.h)(0x641C85A2)
