@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "rcc.h": "c"
+        "rcc.h": "c",
+        "cw32f030_rcc.h": "c"
     }
 }

@@ -31,6 +31,7 @@ extern "C"
 #include "cw32f030_systick.h"
 #include "interrupts_cw32f030.h"
 #include "system_cw32f030.h"
+#include "cw32f030_flash.h"	
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */

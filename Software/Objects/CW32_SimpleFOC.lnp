@@ -30,6 +30,7 @@
 ".\objects\led.o"
 ".\objects\key.o"
 ".\objects\delay.o"
+".\objects\lcd.o"
 ".\objects\croutine.o"
 ".\objects\event_groups.o"
 ".\objects\list.o"

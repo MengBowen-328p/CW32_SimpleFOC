@@ -20,6 +20,7 @@ Powered by WHCHY Libaries
 #include "../../BSP/inc/led.h"
 #include "../../BSP/inc/delay.h"
 #include "../../BSP/inc/key.h"
+#include "../../BSP/inc/lcd.h"
 
 /******************************************************************************
  * Local pre-processor symbols/macros ('#define')
@@ -52,6 +53,8 @@ Powered by WHCHY Libaries
  ******************************************************************************/
 
 void Delay(uint16_t nCount);
+void RCC_Configuration(void);
+void GPIO_Configuration(void);
 /**
  ******************************************************************************
  ** \brief  Main function of project
@@ -63,11 +66,15 @@ void Delay(uint16_t nCount);
  ******************************************************************************/
 int32_t main(void)
 {
+	RCC_Configuration();  //系统时钟64M
+	GPIO_Configuration(); //LED初始化
+	Lcd_Init();
+	Lcd_Clear(RED);               //清屏
+	
     // GPIO_InitTypeDef GPIO_InitStruct;
 
-    RCC_Init_Internal();
-    LED_Init();
-	Key_Init();
+//    RCC_Init_Internal();
+//	Key_Init();
 	
     // __RCC_GPIOB_CLK_ENABLE();
 
@@ -104,6 +111,45 @@ int32_t main(void)
 //         nCount--;
 //     }
 // }
+
+void RCC_Configuration(void)
+{
+  /* 0. HSI使能并校准 */
+  RCC_HSI_Enable(RCC_HSIOSC_DIV6);
+
+  /* 1. 设置HCLK和PCLK的分频系数　*/
+  RCC_HCLKPRS_Config(RCC_HCLK_DIV1);
+  RCC_PCLKPRS_Config(RCC_PCLK_DIV1);
+  
+  /* 2. 使能PLL，通过PLL倍频到64MHz */
+  RCC_PLL_Enable(RCC_PLLSOURCE_HSI, 8000000, 8);     // HSI 默认输出频率8MHz
+ // RCC_PLL_OUT();  //PC13脚输出PLL时钟
+  
+  ///< 当使用的时钟源HCLK大于24M,小于等于48MHz：设置FLASH 读等待周期为2 cycle
+  ///< 当使用的时钟源HCLK大于48MHz：设置FLASH 读等待周期为3 cycle
+  __RCC_FLASH_CLK_ENABLE();
+  FLASH_SetLatency(FLASH_Latency_3);   
+    
+  /* 3. 时钟切换到PLL */
+  RCC_SysClk_Switch(RCC_SYSCLKSRC_PLL);
+  RCC_SystemCoreClockUpdate(64000000);	
+}
+
+
+
+void GPIO_Configuration(void)
+{
+  GPIO_InitTypeDef GPIO_InitStruct;
+	
+	__RCC_GPIOA_CLK_ENABLE();
+
+  GPIO_InitStruct.IT = GPIO_IT_NONE; //LED1 
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pins = GPIO_PIN_7;
+  GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
+  GPIO_Init(CW_GPIOA, &GPIO_InitStruct);
+  PB00_SETLOW();
+}
 
 /******************************************************************************
  * EOF (not truncated)

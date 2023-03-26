@@ -3,18 +3,16 @@
         {
             "name": "Project",
             "includePath": [
-                "d:\\一些有意思的小项目\\CW32_SimpleFOC\\Software\\Libraries\\inc",
-                "d:\\一些有意思的小项目\\CW32_SimpleFOC\\Software\\BSP\\inc",
-                "d:\\一些有意思的小项目\\CW32_SimpleFOC\\Software\\User\\inc",
-                "d:\\一些有意思的小项目\\CW32_SimpleFOC\\Software\\FreeRTOS\\include",
-                "d:\\一些有意思的小项目\\CW32_SimpleFOC\\Software\\FreeRTOS\\protable",
-                "d:\\一些有意思的小项目\\CW32_SimpleFOC\\Software\\User\\src",
-                "d:\\一些有意思的小项目\\CW32_SimpleFOC\\Software",
-                "d:\\一些有意思的小项目\\CW32_SimpleFOC\\Software\\Libraries\\src",
-                "d:\\一些有意思的小项目\\CW32_SimpleFOC\\Software\\BSP\\src",
-                "d:\\一些有意思的小项目\\CW32_SimpleFOC\\Software\\FreeRTOS\\source",
-                "${default}",
-                "${workspaceFolder}/**"
+                "d:\\CW32_SimpleFOC\\Software\\Libraries\\inc",
+                "d:\\CW32_SimpleFOC\\Software\\BSP\\inc",
+                "d:\\CW32_SimpleFOC\\Software\\User\\inc",
+                "d:\\CW32_SimpleFOC\\Software\\FreeRTOS\\include",
+                "d:\\CW32_SimpleFOC\\Software\\FreeRTOS\\protable",
+                "d:\\CW32_SimpleFOC\\Software\\User\\src",
+                "d:\\CW32_SimpleFOC\\Software",
+                "d:\\CW32_SimpleFOC\\Software\\Libraries\\src",
+                "d:\\CW32_SimpleFOC\\Software\\BSP\\src",
+                "d:\\CW32_SimpleFOC\\Software\\FreeRTOS\\source"
             ],
             "defines": [
                 "__CC_ARM",

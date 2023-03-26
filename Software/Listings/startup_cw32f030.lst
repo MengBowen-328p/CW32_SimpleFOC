@@ -358,10 +358,10 @@ ARM Macro Assembler    Page 6
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0+ --apcs=inter
 work --depend=.\objects\startup_cw32f030.d -o.\objects\startup_cw32f030.o -I.\R
-TE\_Project -IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core
+TE\_Project -IC:\Users\15216\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core
 \Include -IC:\Users\15216\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.3\Devic
 e\Include --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 5
-38" --predefine="_RTE_ SETA 1" --predefine="_RTE_ SETA 1" --list=.\listings\sta
+36" --predefine="_RTE_ SETA 1" --predefine="_RTE_ SETA 1" --list=.\listings\sta
 rtup_cw32f030.lst startup_cw32f030.s
 
 
