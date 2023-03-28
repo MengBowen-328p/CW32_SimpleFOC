@@ -61,8 +61,8 @@ void GPIO_Configuration(void);
  ******************************************************************************/
 int32_t main(void)
 {
-	RCC_Configuration();  //ϵͳʱ��64M
-	GPIO_Configuration(); //LED��ʼ��
+	RCC_Configuration();  //时钟速度64MHz
+	GPIO_Configuration(); //配置TFT屏幕相关的GPIO引脚
 	Lcd_Init();
 	Lcd_Clear(BLACK);               //����
 	Gui_DrawFont_GBK16(0,0,WHITE,BLACK,"HALLO WORLD");
