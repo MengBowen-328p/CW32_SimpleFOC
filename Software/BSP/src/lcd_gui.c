@@ -34,6 +34,37 @@ void Gui_DrawFont_GBK16(unsigned int x, unsigned int y, unsigned int fc, unsigne
 			}
 			s++;
 		}
+			
+		else 
+		{
+		
+
+			for (k=0;k<hz16_num;k++) 
+			{
+			  if ((hz16[k].Index[0]==*(s))&&(hz16[k].Index[1]==*(s+1)))
+			  { 
+				    for(i=0;i<16;i++)
+				    {
+						for(j=0;j<8;j++) 
+							{
+						    	if(hz16[k].Msk[i*2]&(0x80>>j))	Gui_DrawPoint(x+j,y+i,fc);
+								else {
+									if (fc!=bc) Gui_DrawPoint(x+j,y+i,bc);
+								}
+							}
+						for(j=0;j<8;j++) 
+							{
+						    	if(hz16[k].Msk[i*2+1]&(0x80>>j))	Gui_DrawPoint(x+j+8,y+i,fc);
+								else 
+								{
+									if (fc!=bc) Gui_DrawPoint(x+j+8,y+i,bc);
+								}
+							}
+				    }
+				}
+			  }
+			s+=2;x+=16;
+		} 
 		
 	}
 }
