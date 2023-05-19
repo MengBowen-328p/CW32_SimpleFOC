@@ -25,4 +25,4 @@
 .\objects\main.o: User\src\../inc/../../BSP/inc/./lcd_config.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\main.o: User\src\../inc/../../BSP/inc/lcd_gui.h
-.\objects\main.o: User\src\../inc/../../BSP/inc/./font.h
+.\objects\main.o: User\src\../inc/../../BSP/inc/font.h

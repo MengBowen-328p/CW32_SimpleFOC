@@ -3,11 +3,14 @@
         {
             "name": "Project",
             "includePath": [
+                "c:\\Users\\15216\\AppData\\Local\\Arm\\Packs\\ARM\\CMSIS\\5.8.0\\CMSIS\\Core\\Include",
                 "d:\\CW32_SimpleFOC\\Software\\Libraries\\inc",
                 "d:\\CW32_SimpleFOC\\Software\\BSP\\inc",
                 "d:\\CW32_SimpleFOC\\Software\\User\\inc",
                 "d:\\CW32_SimpleFOC\\Software\\FreeRTOS\\include",
                 "d:\\CW32_SimpleFOC\\Software\\FreeRTOS\\protable",
+                "C:\\Keil_v5\\ARM\\ARMCC\\include",
+                "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
                 "d:\\CW32_SimpleFOC\\Software\\User\\src",
                 "d:\\CW32_SimpleFOC\\Software",
                 "d:\\CW32_SimpleFOC\\Software\\Libraries\\src",

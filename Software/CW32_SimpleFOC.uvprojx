@@ -566,7 +566,7 @@
             <File>
               <FileName>font.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\font.c</FilePath>
+              <FilePath>.\BSP\src\font.c</FilePath>
             </File>
           </Files>
         </Group>
