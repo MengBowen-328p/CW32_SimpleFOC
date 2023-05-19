@@ -3,8 +3,8 @@
         {
             "name": "Project",
             "includePath": [
-                "c:\\Users\\15216\\AppData\\Local\\Arm\\Packs\\ARM\\CMSIS\\5.8.0\\CMSIS\\Core\\Include",
                 "d:\\CW32_SimpleFOC\\Software\\Libraries\\inc",
+                "c:\\Users\\15216\\AppData\\Local\\Arm\\Packs\\ARM\\CMSIS\\5.8.0\\CMSIS\\Core\\Include",
                 "d:\\CW32_SimpleFOC\\Software\\BSP\\inc",
                 "d:\\CW32_SimpleFOC\\Software\\User\\inc",
                 "d:\\CW32_SimpleFOC\\Software\\FreeRTOS\\include",
